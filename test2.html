@@ -1,21 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ejercicio 2</title>
-</head>
-<body>
-    <main class="container">
-        <div class="container-titulo">
-            <h1>Border JS</h1>
-        </div>
-        <div class="container-img">
-            <img class="container-img-setup" id="img-xbox" src="./assets/img/xbox.jpg" alt="xbox" onclick="addBorder()"/>
-        </div>
-    </main>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="conteiner-test2">
+        <div class="row justify-content-center m-5">
+            <div class="col-sm-3 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body">
+                    <img class="card-img" src="./assets/img/go.jpeg" alt="golang">
+                    <input class="form-control" type="number" name="go-cantidad" id="go-cantidad" placeholder="0">
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">  
+                  <div class="card-body">
+                   <img class="card-img" src="./assets/img/cplus.png" alt="c++">
+                   <input class="form-control" type="number" name="c-cantidad" id="c-cantidad" placeholder="0">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">    
+                <div class="card">
+                  <div class="card-body">
+                    <img class="card-img" src="./assets/img/java.jpeg" alt="java">
+                    <input class="form-control" type="number" name="java-cantidad" id="java-cantidad" placeholder="0">
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+
+    <div class="conteiner-test2-ingreso d-flex flex-column justify-content-around align-items-center ">
+        <p> <span id="texto-cantidad"></span></p>
+        <button class="btn btn-primary" onclick="cuentaStickers()" >Verificar</button>
+    </div>
+
     <script src="./assets/js/main.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
 </html>
