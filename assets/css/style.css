@@ -26,6 +26,11 @@
 }
 .conteiner-test2-ingreso{
     display: flex;
+}
 
-    
+.main-button{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    gap: 10px;
 }
